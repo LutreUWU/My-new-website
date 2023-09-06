@@ -9,4 +9,4 @@
 + If the spotify API doesnt work, refresh the page till it works
 + This website shows who I am, wat I like ...
 
-## I think there's a lot of bugs/probelmes on this website, so if you find one, tell it to me 👍
+## I think there's a lot of bugs/problems on this website, so if you find one, tell it to me 👍
