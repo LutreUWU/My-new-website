@@ -1,0 +1,209 @@
+.rowRight{
+  width: 225px;
+  
+  
+}
+
+.mediaDiv{
+  font-family: pixel nes;
+  margin-left: 2%;
+  height: 300px;
+  color: white;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.562);
+  
+  
+}
+
+.mediaTitle{
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  gap: 8px;
+  font-size: 1.15em;
+  color: #1686d6;
+  text-shadow: rgb(32, 141, 230) 0px 0 15px;
+  
+}
+
+
+
+.mediaText{
+  font-family: 'VT323', monospace;
+  font-size: 1.2em;
+  margin-top: 20%;
+
+}
+
+.mediaLogo{
+  width: 30px;
+  
+}
+
+
+.mediaText p{
+  
+  margin-left: 22.5%;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.mediaText :nth-child(1):hover{
+  cursor: pointer;
+  transform: translateY(-1px);
+  text-decoration: underline;
+  color: #00aade;
+  
+}
+
+.mediaText :nth-child(2):hover{
+  cursor: pointer;
+  transform: translateY(-1px);
+  text-decoration: underline;
+  color: #5662f6;
+}
+
+.mediaText :nth-child(3):hover{
+  cursor: pointer;
+  transform: translateY(-1px);
+  text-decoration: underline;
+  color: #7e7e7e;
+}
+
+.mediaText :nth-child(4){
+  margin-left: 10%;
+}
+.mediaText :nth-child(4):hover{
+  cursor: pointer;
+  transform: translateY(-1px);
+  text-decoration: underline;
+  color: #b0b0b0;
+  
+}
+
+
+.SpotifyText{
+  font-family: 'VT323', monospace;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.SpotifyImage{
+  width: 125px;
+  height: 125px;
+  border: 3px solid gray;
+  border-radius: 15px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.SpotifyImage::before{
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    #0b5991,
+    #0b5991 3px,
+    transparent 3px,
+    transparent 6px
+  );
+  background-size:  100% 6px;
+  width: 100%;
+  height: 100%;
+  animation: pan-overlay 10s infinite linear;
+}
+.ImageSpotify{
+  width: 100%;
+  object-position: center;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+.SpotifyTitleDiv{
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.SpotifyTitle{
+    font-family: 'VT323', monospace;
+  font-size: 1.1em;
+ width: fit-content;
+ transform: translateX(100%);
+  display: flex;
+  justify-content: start;
+  margin-top: 10px;
+  white-space: nowrap;
+  animation: translateText 6s linear infinite;
+
+}
+
+@keyframes translateText {
+  from{
+    transform: translateX(90%);
+  }
+
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+/*Debut animeDiv */ 
+
+.animeDiv{
+  font-family: pixel nes;
+  height: 300px;
+  margin-left: 2%;
+  color: white;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.562);
+  margin-top: 10px;
+}
+
+.animeTitle{
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  gap: 8px;
+  font-size: 1.05em;
+  color: #1686d6;
+  text-shadow: rgb(32, 141, 230) 0px 0 15px;
+}
+
+.aniList{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.aniList article{
+  width:180px;
+  overflow: hidden;
+}
+.aniList span{
+  font-family: 'VT323', monospace;
+  font-size: 1.3em;
+
+ 
+  
+ 
+}
+
+article p{
+  font-family: 'VT323', monospace;
+  font-size: 1.3em;
+  margin: 0;
+  
+  width: fit-content;
+  overflow: hidden;
+  animation: translateText 10s linear infinite;
+  
+
+}
+

@@ -1,0 +1,39 @@
+
+.screen-overlay{
+  background: linear-gradient(
+    rgba(23, 123, 204, 0.1),
+    rgba(23, 123, 204, 0.1) 3px,
+    transparent 3px,
+    transparent 15px
+  );
+
+  background-size:  100% 16px;
+  
+  
+
+ 
+  width: 100%;
+  height: 100%;
+  animation : pan-overlay 22s infinite linear;
+
+  position: fixed;
+  
+  top: 0px;
+  z-index: -99;
+}
+
+
+
+
+
+@keyframes pan-overlay {
+  
+  from {
+    background-position: 0% 0%
+  }
+  
+  to {
+    background-position: 0% 100%;
+    
+  }
+}

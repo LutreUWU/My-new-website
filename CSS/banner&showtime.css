@@ -1,0 +1,374 @@
+.bannerDiv{
+width: calc(100% / 0.75);
+height: 100px;
+margin: 10px 0 ;
+
+display: flex;
+justify-content: center;
+position: relative;
+}
+
+.bannerDiv::before{
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    #0b5991,
+    #0b5991 3px,
+    transparent 3px,
+    transparent 6px
+  );
+  background-size:  100% 6px;
+  width: 99%;
+  height: 100%;
+  animation: pan-overlay 10s infinite linear;
+  z-index: 99;
+  opacity: 0.2;
+}
+.banner{
+ width: 99%;
+ height: 100%;
+}
+.bannerImage{
+  width: 100%;
+  height: 100%;
+  object-position:100% 25%;
+  object-fit: cover;
+
+  border: #1686d6 solid 3px ;
+  border-radius:10px;
+}
+
+
+.textbannerSlide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  height: 100%;
+  
+  left: 10%;
+  
+  
+ 
+  
+position: absolute;
+white-space: nowrap;
+overflow: hidden;
+
+}
+
+.textbanner{
+  color: rgb(230, 230, 230);
+  text-shadow: 0 0 5px black;
+  font-family: 'VT323', monospace;
+  font-size: 100px;
+  width: 100%;
+  margin: 0;
+}
+
+.transitionBannerText{
+  animation: transitionbannerText 0.4s
+
+}
+
+@keyframes transitionbannerText {
+  from{
+    opacity: 0.5;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+.showTimeDiv{
+  color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+}
+
+.showTime{
+  margin: auto;
+  width: fit-content;
+  margin-top: 30px;
+  font-family: 'VT323', monospace;
+  font-size: 2em;
+  padding: 10px;
+  border: solid white 3px;
+  border-radius: 5px;
+  transition: all 0.5s;
+  z-index: 2;
+
+}
+
+.showTime:hover{
+  
+  border: dashed wheat 5px;
+  color: wheat;
+  background-color: whitesmoke;
+  text-shadow: 0 0 5px black;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+
+.leftLightDiv{
+  width: 0px;
+  height: 0px;
+  perspective: 400px;
+  position: absolute;
+  top: 0px;
+  left: -150px;
+  opacity: 1;
+  animation: LightMove 3s infinite alternate;
+  transform:rotateZ(37deg);
+
+  transition: width 1.5s ease-in-out, height 1s ease-in-out;
+pointer-events: none;
+}
+
+
+.leftLight{
+  height: 100%;
+  transform: rotateY(-45deg);
+  transform-origin: left;
+  background-image: linear-gradient(to right, rgba(240, 240, 237, 0.733), rgba(255, 255, 255, 0.5) 70%, transparent);
+  border-radius: 20% / 100% 0 0 100%;
+  filter: blur(6px);
+}
+
+
+.rightLightDiv{
+  width: 0px;
+  height: 0px;
+  perspective: 400px;
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  animation: LightMove 3s infinite alternate;
+
+  transform:rotateZ(-37deg);
+  transform-origin: right;
+
+  transition: width 1.5s ease-in-out, height 1s ease-in-out;
+  pointer-events: none;
+
+
+}
+
+
+
+
+.rightLight{
+  height: 100%;
+  transform: rotateY(45deg);
+  transform-origin: right;
+  background-image: linear-gradient(to left, rgba(240, 240, 237, 0.733), rgba(255, 255, 255, 0.5) 70%, transparent);
+  border-radius: 20% / 100% 0 0 100%;
+  filter: blur(6px);
+}
+@keyframes LightMove {
+  from{
+
+    perspective: 400px;
+  }
+
+  to{
+
+    perspective: 380px;
+  }
+}
+
+.color{
+  animation: colorshow 1.4s ease-in-out
+}
+
+.shadow{
+
+  animation: shadow 1.5s ease-in-out
+
+}
+
+.outshadow{
+
+  animation: outshadow 1.5s ease-in-out
+
+}
+
+.shadowSite{
+  height: 2000px;
+  width: 890px;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -99;
+}
+
+@keyframes colorshow {
+  0%, 100% {
+    border: 2px solid grey;
+    
+  }
+
+  50%{
+    border-color:  wheat;
+
+  }
+}
+
+@keyframes shadow {
+  0%, 100% {
+    box-shadow: inset 0 0 0px;
+    
+  }
+
+  50%{
+    box-shadow: inset 1px 0px 100px 10px wheat;
+
+  }
+}
+@keyframes outshadow {
+  0%, 100% {
+    box-shadow:  0 0 0px;
+    
+  }
+
+  50%{
+    box-shadow:  1px 0px 30px 10px wheat;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.allCards{
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+  top: 0;
+  overflow: hidden;
+}
+
+.characterCardDiv{
+  background-color: transparent;
+  width: 180px;
+  height: 250px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  position: absolute;
+  top: -300px;
+  
+  
+}
+
+.characterCard{
+  border: 1px solid #f1f1f1;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  animation: rotate 10s linear infinite;
+  transform: rotateY(180deg);
+
+  background-position: center;
+  background-size: cover;
+
+}
+
+@keyframes rotate {
+  from{  
+    transform: rotateY(180deg);
+  }
+
+  to{
+    transform: rotateY(540deg);
+
+  }
+}
+.characterCard:hover{
+  animation: none;
+}
+
+.cardFront,
+.cardBack{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+
+  font-family: 'VT323', monospace;
+  backdrop-filter: brightness(30%);
+  font-size: 0.9em;
+}
+
+.cardBack h2{
+  margin: 5px auto 5px;
+}
+
+.cardTitle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+  width: 100%;
+  font-size: 1.5em;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.screenOverlayCard{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  margin-top:10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.screenOverlayCard::before{
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    #0b5991,
+    #0b5991 3px,
+    transparent 3px,
+    transparent 6px
+  );
+  background-size:  100% 6px;
+  width: 99%;
+  height: 100%;
+  animation: pan-overlay 10s infinite linear;
+  z-index: 99;
+  opacity: 0.1;
+}
+
+.Avatar{
+  width:100%;
+  height:100%; 
+  
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
