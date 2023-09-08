@@ -22,6 +22,10 @@ body{
   z-index: -99;
 }
 
+.pp{
+  object-fit: cover;
+  object-position: center;
+}
 .sparkleDiv{
   position: absolute;
   pointer-events: none;

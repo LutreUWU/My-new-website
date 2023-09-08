@@ -37,6 +37,7 @@ generateCodeChallenge(codeVerifier).then(codeChallenge => {
   let scope = 'user-read-currently-playing user-top-read';
 
   localStorage.setItem('code_verifier', codeVerifier);
+  localStorage.setItem('True', true);
 
   let args = new URLSearchParams({
     response_type: 'code',
