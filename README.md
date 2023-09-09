@@ -16,4 +16,7 @@ L'odeur du site est monumentale (c'est une ref, si vous comprenez pas skippez)
 J'espère que ce site va vous plaire, petit projet que j'ai fait pendant mes grandes vacances de 2023, normalement il doit y avoir peu d'erreurs (Peut être des problèmes de responsives car j'avais la flemme de le faire).
 
 
-![toradora-taiga](https://github.com/LutreUWU/My-new-website/assets/126251020/0d4388c3-2714-457d-880b-18e2e70c68e4)
+
+<p align="center" width="100%">
+    <img width="33%" src="https://github.com/LutreUWU/My-new-website/assets/126251020/0d4388c3-2714-457d-880b-18e2e70c68e4"> 
+</p>
