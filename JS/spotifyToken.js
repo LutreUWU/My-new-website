@@ -15,9 +15,9 @@ artistName = document.querySelectorAll(".artistName")
 
 const urlParams = new URLSearchParams(window.location.search);
 let code = urlParams.get('code');
-let VerifierTrue = localStorage.getItem('True');
+state = localStorage.getItem('state');
 
-if (code == null && VerifierTrue == undefined){
+if (state == null){
   window.location.href = 'http://127.0.0.1:5500/authorize.html'
 }
 
@@ -61,8 +61,8 @@ const response = fetch('https://accounts.spotify.com/api/token', {
   });
 
   const authCodeObtainedTime = Date.now(); // Enregistrez le temps actuel en millisecondes
-  const authCodeValidityPeriod = 360000; 
-  const checkValidityInterval = 360100; 
+  const authCodeValidityPeriod = 100000; 
+  const checkValidityInterval = 100001; 
   
   function checkAuthCodeValidity() {
     const currentTime = Date.now();

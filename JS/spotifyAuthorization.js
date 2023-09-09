@@ -31,13 +31,13 @@ async function generateCodeChallenge(codeVerifier) {
 
 
 let codeVerifier = generateRandomString(128);
-
+let Verifier = false
 generateCodeChallenge(codeVerifier).then(codeChallenge => {
   let state = generateRandomString(16);
   let scope = 'user-read-currently-playing user-top-read';
 
   localStorage.setItem('code_verifier', codeVerifier);
-  localStorage.setItem('True', true);
+  localStorage.setItem('state', state);
 
   let args = new URLSearchParams({
     response_type: 'code',
