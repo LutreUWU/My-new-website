@@ -4,7 +4,7 @@ const clientId = '33232f92735a4d37902fe50b38815b50';
 
 const clientSecret = '4f3f3abaf1b44862b9eef4dddc243e0d';
 
-const redirectUri = 'http://127.0.0.1:5500/index.html';
+const redirectUri = 'http://127.0.0.1:5501/index.html';
 
 spotifyImage = document.querySelector(".ImageSpotify")
 spotifyTitle = document.querySelector(".SpotifyTitle")
@@ -15,12 +15,11 @@ artistName = document.querySelectorAll(".artistName")
 
 const urlParams = new URLSearchParams(window.location.search);
 let code = urlParams.get('code');
-state = localStorage.getItem('state');
 
-if (state == null){
-  window.location.href = 'http://127.0.0.1:5500/authorize.html'
+if (code == null) {
+  throw new Error("You don't want to share your Spotify");
+  
 }
-
 
 let codeVerifier = localStorage.getItem('code_verifier');
 let body = new URLSearchParams({

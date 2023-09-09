@@ -11,7 +11,7 @@ function generateRandomString(length) {
     return text;
   }
 
-const redirectUri = `http://127.0.0.1:5500/index.html`;
+const redirectUri = `http://127.0.0.1:5501/index.html`;
  
 
 async function generateCodeChallenge(codeVerifier) {
@@ -37,7 +37,6 @@ generateCodeChallenge(codeVerifier).then(codeChallenge => {
   let scope = 'user-read-currently-playing user-top-read';
 
   localStorage.setItem('code_verifier', codeVerifier);
-  localStorage.setItem('state', state);
 
   let args = new URLSearchParams({
     response_type: 'code',
