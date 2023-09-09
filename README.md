@@ -4,7 +4,7 @@
 
 # Read this before download :
 +  ### This website uses Spotify API (currently playing, top tracks, top artists), if you want to share your Spotify account, open the file "authorize.html", otherwise, open the file "index.html", if you refuse some parts of the website will not work
-
++ ### If the website doesn't appear maybe try to change the "redirectUri" link on the file "spotifyToken.js" and "spotifyAuthorization.js"
 + This is my first website, inspired by [this one](https://dimden.dev/)
 + You must download the Police Font [Pixel nes](https://www.dafontfree.net/pixel-nes-regular/f153115.htm)
 + This is the first time I use API, if the spotify API doesnt work, maybe try to refresh the page and if it doesn't work, dm me on discord (davideuh) or gmail (davidliv6@gmail.com) with your problem and maybe I will be able to fix it 
