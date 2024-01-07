@@ -20,7 +20,7 @@ function generateSparkle() {
     
 
     const Sparkle = document.createElement("img");
-         Sparkle.src = ["../BG/pixelstar.gif",];
+         Sparkle.src = ["BG/pixelstar.gif",];
          Sparkle.classList.add("Sparkle");
          Sparkle.style.width = size + "px"
          Sparkle.style.top = topPX  + "px"
