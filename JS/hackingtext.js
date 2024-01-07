@@ -12,7 +12,7 @@ const Site = [
   bonus: '⚠ No Responsive',
   descriptionTwo: "That's where everything started.",
   
-  image: "../Image/VideoSite/Site1.gif",
+  image: "Image/VideoSite/Site1.gif",
 
 }, 
 
@@ -25,7 +25,7 @@ const Site = [
   bonus:'⚠ No Responsive',
   descriptionTwo: "A 2nd project just for training",
   
-  image: "../Image/VideoSite/Site2.gif",
+  image: "Image/VideoSite/Site2.gif",
 },
 
 {
@@ -37,7 +37,7 @@ const Site = [
   bonus: '',
   descriptionTwo: "The first time I try Javascript",
  
-  image: "../Image/VideoSite/Site3.gif",
+  image: "Image/VideoSite/Site3.gif",
 },
 
 {
@@ -49,7 +49,7 @@ const Site = [
   bonus: '',
   descriptionTwo: "The first time I feel improvement",
  
-  image: "../Image/VideoSite/Site4.gif",
+  image: "Image/VideoSite/Site4.gif",
 },
 
 {
@@ -61,7 +61,7 @@ const Site = [
   bonus: '',
   descriptionTwo: "This is the start of the Javascript arc",
  
-  image: "../Image/VideoSite/Site5.gif",
+  image: "Image/VideoSite/Site5.gif",
 },
 
 {
@@ -73,7 +73,7 @@ const Site = [
   bonus: 'The background is responsive with the Sun',
   descriptionTwo: "I'm proud of this",
  
-  image: "../Image/VideoSite/Site6.gif",
+  image: "Image/VideoSite/Site6.gif",
 },
 
 
